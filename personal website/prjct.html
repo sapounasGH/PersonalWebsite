@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <meta charset="utf-8">
+    <title>MY PROJECT</title>
+    <script>
+        function changef(){
+          document.getElementById("ch").src="2dnld.png"; 
+       }
+        function changef1(){
+            document.getElementById("ch").src="download-flat.png";
+        }
+        function warn() {
+          var links=document.getElementById('l1');
+          links.onclick=function(){return confirm("Are you sure you want to dowload?");}
+        }
+        function btn(){
+            x=document.getElementById("bun").value;
+           if(x=="STOP"){
+               document.getElementById("bun").value="START";
+               document.body.style.backgroundImage = "url('staticwallpaper2.png')";
+           }else{
+               document.getElementById("bun").value="STOP";
+               document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/e3/eb/31/e3eb311af2c90bd23b9b44d4c8353aa9.gif')";
+           }
+        }
+    </script>
+    <style>  
+        body{
+            margin: 0px;
+            background-image: url("https://i.pinimg.com/originals/e3/eb/31/e3eb311af2c90bd23b9b44d4c8353aa9.gif");
+            color: white;
+            font-family:"Audiowide", sans-serif;
+        }
+        .onoma h1,h2{font-weight: 400;}
+        .onoma h1{
+            font-size: 150%;
+            margin-top: -10px;
+            margin-left: 2%; 
+        }
+        
+        .onoma h2{
+            margin-left: 7%;
+            margin-top: -20px;
+            font-size:150%;
+        }
+        .onoma{
+            width: 30%;
+        }
+        .bara{
+            width: 60%;
+        }
+        .soc{
+            width: 10%;
+        }
+        .bara, .onoma, .soc{
+            float:left;
+            padding: 1.5%;
+            height: 90px;
+            box-sizing: border-box;
+            background-color: darkgreen;
+            font-family:"Audiowide", sans-serif;
+        }
+        .bara ul li{
+            list-style: none;
+            text-align:center;
+            text-decoration: none;
+            display: inline;
+            padding: 3%;
+            font-size: 120%;   
+        }
+        .soc ul li{
+            list-style: none;
+            text-decoration: none;
+        }
+        .bara a{
+            text-decoration: none;
+            color: white;
+        }
+        a:link, a:visited {
+            display: inline-block;
+        }
+        a:hover, a:active {
+            color: black;
+        }
+        .bara ul{
+            margin-left: -20%;
+        }
+        .soc ul{
+            margin-top: -10%;
+        }
+        .d3{
+            padding-top: 7.5%;
+        }
+        span{
+            background-color: black;
+        }
+        .hdr{
+            text-align: center;
+            font-size: 160%;
+        }
+        .ab{
+          font-size: 130%;
+          text-align: center;
+          padding-left: 5%;
+          padding-top: 5%;
+        }
+        .container{
+            width: 100%;
+            text-align: center;
+            padding-top: 1%;
+        }
+        input {
+           background-color: inherit;
+           color: white;
+           font-family:"Audiowide", sans-serif;
+           font-size: 100%;
+           cursor: pointer;
+           border: inherit;
+        }
+        input:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body onload="warn()">
+    <div class="pano">
+      <div class="onoma">
+      <h1>Christos</h1>
+      <h2>Sapounas</h2>
+      </div>
+      <div class="bara">
+        <ul>
+           <li><a href="homepage.html">HOME</a></li>
+           <li><a href="abtme.html">ABOUT ME</a></li>
+            <li><a href="prjct.html" style="color:black">MY PROJECT</a></li>
+           <li><a href="hb.html">M&amp;M</a></li>
+           <li><a href="cont.html">CONTACT</a></li>
+           <li><input type="button" id="bun" value="STOP" onclick="btn()"></li>
+          </ul>
+      </div>
+    <div class="soc">
+          <ul>
+           <li><a href="https://www.instagram.com/sapounas.xrhstos/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="18"></a></li>
+           <li><a href="https://open.spotify.com/user/212u66igayrbc6wtwv4mmzagy?si=417847df35654eb2"><img src="https://cdn-icons-png.flaticon.com/512/87/87409.png" width="18"></a></li>
+           <li><a href="https://twitter.com/sapounas_chris"><img src="https://cdn-icons-png.flaticon.com/512/25/25347.png" width="18"></a></li> 
+        </ul>
+    </div>
+    </div>
+    <div class="d3">
+        <div class="hdr">
+       <h1>My Project About Smart Cities and the Intenet Of Things!</h1>
+       <p>For the subject of Technical Writing, Presentation and Terminology of Foreign Language</p></div>
+       <div class="ab"><p><span>
+           <b>Abstract —</b> Smart cities and the Internet of Things(IoT) two meanings that are used a lot in the 21 st century. Cities that are considered smart are not rare in 2022 and cities that for every issue of every citizen has a smart solution. With the combination of internet of things and smart cities there has been created an environment that is favorable for the citizens because it provides them privileges that help them in their every day life. The IoT is a big help for the creation of these cities and this has a result that the advantages of these cities prevail their disadvantages.</span></p></div>   
+    </div>
+    <div class="container">
+    <p>Click on the icon below to download my Write-Up (433KB) :</p>
+    <a id="l1" href="2ergasiasapounasxrhstos2021152.pdf" download="sapounasproject" onmouseover="changef()" onmouseout="changef1()"><img id="ch" src="download-flat.png" width="35" ></a>
+    </div>
+</body>
+</html>  

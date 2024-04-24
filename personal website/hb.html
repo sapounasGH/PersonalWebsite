@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <meta charset="utf-8">
+    <title>MUSIC &amp; MOVIES </title>
+    <script>
+        function btn(){
+            x=document.getElementById("bun").value;
+           if(x=="STOP"){
+               document.getElementById("bun").value="START";
+               document.body.style.backgroundImage = "url('staticwallpaper2.png')";
+           }else{
+               document.getElementById("bun").value="STOP";
+               document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/e3/eb/31/e3eb311af2c90bd23b9b44d4c8353aa9.gif')";
+           }
+        }
+        var moviepics =new Array();
+        moviepics[0]="dune.jpg";
+        moviepics[1]="hobbit.jpg";
+        moviepics[2]="poh.jpg";
+        moviepics[3]="fc.jpg";
+        moviepics[4]="thematrix.jpg";
+        moviepics[5]="lotr2.jpg";
+        moviepics[6]="avengers.jpg";
+        moviepics[7]="starww.jpg";
+        moviepics[8]="thedk.jpg";
+        moviepics[9]="lotr3.jpg";
+        var nums =new Array();
+        nums[0]="No. 10";
+        nums[1]="No. 9";
+        nums[2]="No. 8";
+        nums[3]="No. 7";
+        nums[4]="No. 6";
+        nums[5]="No. 5";
+        nums[6]="No. 4";
+        nums[7]="No. 3";
+        nums[8]="No. 2";
+        nums[9]="No. 1";
+        var title =new Array();
+        title[0]="Dune";
+        title[1]="The Hobbit: The Desolation of Smaug";
+        title[2]="The Pursuit of Happiness";
+        title[3]="Fight Club";
+        title[4]="The Matrix";
+        title[5]="The Lord of the Rings: The Two Towers";
+        title[6]="Avengers: Infinity War";
+        title[7]="Star Wars: Episode III – Revenge of the Sith";
+        title[8]="The Dark Knight";
+        title[9]="The Lord of the Rings: The Return of the King";
+        var imdb =new Array();
+        imdb[0]="<a href='https://www.imdb.com/title/tt1160419/?ref_=ttls_li_tt'>IMDB: 8.0</a>";
+        imdb[1]="<a href='https://www.imdb.com/title/tt1170358/?ref_=nv_sr_srsg_0'>IMDB: 7.8</a>";
+        imdb[2]="<a href='https://www.imdb.com/title/tt0454921/?ref_=fn_al_tt_1'>IMDB: 8.0</a>";
+        imdb[3]="<a href='https://www.imdb.com/title/tt0137523/?ref_=fn_al_tt_1'>IMDB: 8.8</a>";
+        imdb[4]="<a href='https://www.imdb.com/title/tt0133093/?ref_=nv_sr_srsg_0'>IMDB: 8.7</a>";
+        imdb[5]="<a href='https://www.imdb.com/title/tt0167261/?ref_=nv_sr_srsg_8'>IMDB: 8.8</a>";
+        imdb[6]="<a href='https://www.imdb.com/title/tt4154756/?ref_=nv_sr_srsg_6'>IMDB: 8.4</a>";
+        imdb[7]="<a href='https://www.imdb.com/title/tt0121766/?ref_=nv_sr_srsg_0'>IMDB: 7.6</a>";
+        imdb[8]="<a href='https://www.imdb.com/title/tt0468569/?ref_=nv_sr_srsg_0'>IMDB: 9.0</a>";
+        imdb[9]="<a href='https://www.imdb.com/title/tt0167260/?ref_=nv_sr_srsg_7'>IMDB: 9.0</a>";
+        var i=0;
+        function next(){
+            i++;
+            if(i==10){
+               i=0;
+               document.getElementById('mp').src=moviepics[i];
+               document.getElementById('num').innerHTML=nums[i];
+               document.getElementById('t').innerHTML=title[i];
+               document.getElementById('rate').innerHTML=imdb[i];
+               }
+            else{
+                document.getElementById('mp').src=moviepics[i];
+                document.getElementById('num').innerHTML=nums[i];
+                document.getElementById('t').innerHTML=title[i];
+                document.getElementById('rate').innerHTML=imdb[i];
+            }
+        }
+        function prev(){
+            i--;
+            if(i==-1){
+               i=9;
+               document.getElementById('mp').src=moviepics[i];
+               document.getElementById('num').innerHTML=nums[i];
+               document.getElementById('t').innerHTML=title[i];
+               document.getElementById('rate').innerHTML=imdb[i];
+               }
+            else{
+                document.getElementById('mp').src=moviepics[i];
+                document.getElementById('num').innerHTML=nums[i];
+                document.getElementById('t').innerHTML=title[i];
+                document.getElementById('rate').innerHTML=imdb[i];
+            }
+        }
+        var pph=new Array();
+        pph[0]="<a href='https://open.spotify.com/playlist/7jabSJ2mACjgP7UTRrIW4o?si=b516ddd96e1e4b36'><img src='pl1.jpg' width='300'></a>";
+        pph[1]="<a href='https://open.spotify.com/playlist/66q9QxOw6fQjddEUgXhpAR?si=15aca9a168aa48e4'><img src='chillcar.png' width='300'></a>";
+        pph[2]="<a href='https://open.spotify.com/playlist/1CjiWpADhkITnWuFEhvVq6?si=03ef54be042c44ec'><img src='hcs.png' width='300'></a>";
+        pph[3]="<a href='https://open.spotify.com/playlist/5i0ozMS0bBHPGqjQ1So9sx?si=182215d8d9334520'><img src='stmf.png' width='300'></a>";
+        pph[4]="<a href='https://open.spotify.com/playlist/1S9cUTX1WyuLfgGwqEJody?si=b4c9a1a37fa84f69'><img src='orga.png' width='300'></a>";
+        pph[5]="<a href='https://open.spotify.com/playlist/0d4A8FPmzCS5X23cfIqofI?si=e11e5f3e9f814d98'><img src='ken.png' width='300'></a>";
+        pph[6]="<a href='https://open.spotify.com/playlist/2NaAiWd5N6ha9Oz0ctvB8z?si=77b2252f18d948c6'><img src='fu.png' width='300'></a>";
+        var n=new Array();
+        n[0]="R&amp;B";
+        n[1]="Chill Car songs";
+        n[2]="Hype Car songs";
+        n[3]="songs that made me float";
+        n[4]="R&amp;B + Rap = orgasm";
+        n[5]="2010 mix";
+        n[6]="Stay toxic";
+        var k=0;
+        function next2(){
+            k++;
+            if(k==7){
+               k=0;
+               document.getElementById('pphoto').innerHTML=pph[k];
+               document.getElementById('name').innerHTML=n[k];
+               }
+            else{
+               document.getElementById('pphoto').innerHTML=pph[k];
+               document.getElementById('name').innerHTML=n[k]; 
+            }
+        }
+        function prev2(){
+            k--;
+            if(k==-1){
+               k=6;
+               document.getElementById('pphoto').innerHTML=pph[k];
+               document.getElementById('name').innerHTML=n[k];
+               }
+            else{
+               document.getElementById('pphoto').innerHTML=pph[k];
+               document.getElementById('name').innerHTML=n[k]; 
+            }
+        }
+        
+    </script>
+    <style>  
+        body{
+            margin: 0px;
+            background-image: url("https://i.pinimg.com/originals/e3/eb/31/e3eb311af2c90bd23b9b44d4c8353aa9.gif");
+            color: white;
+            font-family:"Audiowide", sans-serif;
+        }
+        .onoma h1,h2{font-weight: 400;}
+        .onoma h1{
+            font-size: 150%;
+            margin-top: -10px;
+            margin-left: 2%; 
+        }
+        
+        .onoma h2{
+            margin-left: 7%;
+            margin-top: -20px;
+            font-size:150%;
+        }
+        .onoma{
+            width: 30%;
+        }
+        .bara{
+            width: 60%;
+        }
+        .soc{
+            width: 10%;
+        }
+        .bara, .onoma, .soc{
+            float:left;
+            padding: 1.5%;
+            height: 90px;
+            box-sizing: border-box;
+            background-color: darkgreen;
+            font-family:"Audiowide", sans-serif;
+        }
+        .bara ul li{
+            list-style: none;
+            text-align:center;
+            text-decoration: none;
+            display: inline;
+            padding: 3%;
+            font-size: 120%;   
+        }
+        .soc ul li{
+            list-style: none;
+            text-decoration: none;
+        }
+        .bara a{
+            text-decoration: none;
+            color: white;
+        }
+        .bara a:link, a:visited {
+            display: inline-block;
+        }
+        .bara a:hover, a:active {
+            color: black;
+        }
+        .bara ul{
+            margin-left: -20%;
+        }
+        .soc ul{
+            margin-top: -10%;
+        }
+        input {
+           background-color: inherit;
+           color: white;
+           font-family:"Audiowide", sans-serif;
+           font-size: 100%;
+           cursor: pointer;
+           border: inherit;
+        }
+        input:hover{
+            color: black;
+        }
+        .d4{
+            padding-top: 7.5%;
+        }
+        .d4 h1,p,h3{
+            text-align: center;
+        }
+        span{
+            background-color: black;
+        }
+        .d4 h1{
+            font-size: 300%; 
+        }
+        .plpc{
+            padding-top: 2%;
+            text-align: center;
+        }
+        .buttons input {
+           background-color: black;
+           color: white;
+           display: inline-block;
+           font-family:"Audiowide", sans-serif;
+           font-size: 100%;
+           cursor: pointer;
+           border: 2px solid white;
+        }
+        .buttons input:hover{
+            background-color: darkgreen;
+            border: 2px solid darkgreen;
+            transition-duration: 0.4s;
+        }
+        .buttons{
+            text-align: center;
+        }
+        .but1{
+            margin-left: 5%;
+        }
+        .moviep{
+            padding-top: 2%;
+            text-align: center;
+        }
+        .d4 a{
+            color: white;
+        }
+        .d4 a:visited{
+            text-decoration: none;
+        }
+        .d4 a:hover, a:active{
+            color:darkgreen;
+        }
+        .moviep img{
+             border-radius: 8px;
+        }
+        .plpc img{
+            border-radius: 15px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="pano">
+      <div class="onoma">
+      <h1>Christos</h1>
+      <h2>Sapounas</h2>
+      </div>
+      <div class="bara">
+        <ul>
+           <li><a href="homepage.html">HOME</a></li>
+           <li><a href="abtme.html">ABOUT ME</a></li>
+           <li><a href="prjct.html">MY PROJECT</a></li>
+           <li><a href="hb.html" style="color:black">M&amp;M</a></li>
+           <li><a href="cont.html">CONTACT</a></li>
+           <li><input type="button" id="bun" value="STOP" onclick="btn()"></li>
+          </ul>
+      </div>
+    <div class="soc">
+          <ul>
+           <li><a href="https://www.instagram.com/sapounas.xrhstos/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="18"></a></li>
+           <li><a href="https://open.spotify.com/user/212u66igayrbc6wtwv4mmzagy?si=417847df35654eb2"><img src="https://cdn-icons-png.flaticon.com/512/87/87409.png" width="18"></a></li>
+           <li><a href="https://twitter.com/sapounas_chris"><img src="https://cdn-icons-png.flaticon.com/512/25/25347.png" width="18"></a></li> 
+        </ul>
+    </div>
+    </div>
+    <div class="d4">
+        <h1>MUSIC &amp; MOVIES</h1>
+        <p>I have a big passion about both <a href="#mu">music</a> and <a href="#mo">movies!</a></p>
+        <br>
+        <p id="mu">HERE ARE SOME OF MY FAVORITE PERSONAL PLAYLISTS!</p>
+        <br>
+        <p>(click on the photo to get the playlist)</p>
+        <div class="plpc" id="pphoto"><a href="https://open.spotify.com/playlist/7jabSJ2mACjgP7UTRrIW4o?si=b516ddd96e1e4b36"><img src="pl1.jpg" width="300"></a></div>
+        <h3 id="name">R&amp;B</h3>
+        <div class="buttons">
+        <input type="button" value="previous playlist" onclick="prev2()">
+        <input type="button" value="next playlist" class="but1" onclick="next2()">
+        </div>
+        <p style="padding-top: 10%;" id="mo">MY TOP 10 MOVIES OF ALL TIME</p>
+        <div class="moviep"><img id="mp" src="dune.jpg" width="320" ></div>
+        <h3 id="num">No. 10</h3>
+        <h2 id="t" style="text-align: center;">Dune</h2>
+        <h3 id="rate"><a href="https://www.imdb.com/title/tt1160419/?ref_=nv_sr_srsg_0">IMDB: 8.0</a></h3>
+        <div class="buttons">
+        <input type="button" value="previous" onclick="prev()">
+        <input type="button" value="next" class="but1" onclick="next()">
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+</body>
+</html>  

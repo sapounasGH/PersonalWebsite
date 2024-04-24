@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <meta charset="utf-8">
+    <title>CONTACT</title>
+    <script>
+        function btn(){
+            x=document.getElementById("bun").value;
+           if(x=="STOP"){
+               document.getElementById("bun").value="START";
+               document.body.style.backgroundImage = "url('staticwallpaper2.png')";
+           }else{
+               document.getElementById("bun").value="STOP";
+               document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/e3/eb/31/e3eb311af2c90bd23b9b44d4c8353aa9.gif')";
+           }
+        }
+        function contbutt(){
+             document.getElementById('dd5').innerHTML="<h1 style='font-size: 250%;'>Your message has been sent successfully!</h1> <img src='thumbs-thumbs-up-kid.gif' width='500'>";
+        }
+    </script>
+    <style>  
+        body{
+            margin: 0px;
+            background-image: url("https://i.pinimg.com/originals/e3/eb/31/e3eb311af2c90bd23b9b44d4c8353aa9.gif");
+            color: white;
+            font-family:"Audiowide", sans-serif;
+        }
+        .onoma h1,h2{font-weight: 400;}
+        .onoma h1{
+            font-size: 150%;
+            margin-top: -10px;
+            margin-left: 2%; 
+        }
+        span{
+            background-color: black;
+        }
+        .onoma h2{
+            margin-left: 7%;
+            margin-top: -20px;
+            font-size:150%;
+        }
+        .onoma{
+            width: 30%;
+        }
+        .bara{
+            width: 60%;
+        }
+        .soc{
+            width: 10%;
+        }
+        .bara, .onoma, .soc{
+            float:left;
+            padding: 1.5%;
+            height: 90px;
+            box-sizing: border-box;
+            background-color: darkgreen;
+            font-family:"Audiowide", sans-serif;
+        }
+        .bara ul li{
+            list-style: none;
+            text-align:center;
+            text-decoration: none;
+            display: inline;
+            padding: 3%;
+            font-size: 120%;   
+        }
+        .soc ul li{
+            list-style: none;
+            text-decoration: none;
+        }
+        .bara a{
+            text-decoration: none;
+            color: white;
+        }
+        a:link, a:visited {
+            display: inline-block;
+        }
+        a:hover, a:active {
+            color: black;
+        }
+        .bara ul{
+            margin-left: -20%;
+        }
+        .soc ul{
+            margin-top: -10%;
+        }
+        .bara input {
+           background-color: inherit;
+           color: white;
+           font-family:"Audiowide", sans-serif;
+           font-size: 100%;
+           cursor: pointer;
+           border: inherit;
+        }
+        .bara input:hover{
+            color: black;
+        }
+        .d5{
+            padding-top: 7.5%;
+        }
+        .msg textarea{ 
+            width: 40%;
+            margin-top: 3%;
+            height:200px;
+            background-color: darkgrey;
+            border: 6px solid darkgreen;
+            border-radius: 4px;
+        }
+        .msg,.name,.mail,.bt{
+            text-align: center;
+        }
+        .d5 {
+            text-align: center;
+        } 
+        .name input{
+            width: 40%;
+            background-color: darkgrey;
+            border: 6px solid darkgreen;
+            border-radius: 4px;
+            height: 30px;
+            margin-top: 2%;
+        }
+        .mail input{
+            width: 40%;
+            background-color: darkgrey;
+            border: 6px solid darkgreen;
+            border-radius: 4px;
+            margin-top: 5%;
+            height: 30px;
+            margin-top: 5%;
+        }
+        .bt input {
+           background-color: black;
+           color: white;
+           display: inline-block;
+           font-family:"Audiowide", sans-serif;
+           font-size: 100%;
+           cursor: pointer;
+           border: 2px solid white;
+           margin-top: 2%;
+           margin-left: 35%;
+        }
+        .bt input:hover{
+            background-color: darkgreen;
+            border: 2px solid darkgreen;
+            transition-duration: 0.4s;
+        }
+    </style>
+</head>
+<body>
+    <div class="pano">
+      <div class="onoma">
+      <h1>Christos</h1>
+      <h2>Sapounas</h2>
+      </div>
+      <div class="bara">
+        <ul>
+           <li><a href="homepage.html">HOME</a></li>
+           <li><a href="abtme.html">ABOUT ME</a></li>
+            <li><a href="prjct.html">MY PROJECT</a></li>
+           <li><a href="hb.html">M&amp;M</a></li>
+           <li><a href="cont.html" style="color:black">CONTACT</a></li>
+           <li><input type="button" id="bun" value="STOP" onclick="btn()"></li>
+          </ul>
+      </div>
+    <div class="soc">
+          <ul>
+           <li><a href="https://www.instagram.com/sapounas.xrhstos/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="18"></a></li>
+           <li><a href="https://open.spotify.com/user/212u66igayrbc6wtwv4mmzagy?si=417847df35654eb2"><img src="https://cdn-icons-png.flaticon.com/512/87/87409.png" width="18"></a></li>
+           <li><a href="https://twitter.com/sapounas_chris"><img src="https://cdn-icons-png.flaticon.com/512/25/25347.png" width="18"></a></li> 
+        </ul>
+    </div>
+    </div>
+    <div class="d5" id="dd5">
+    <form onsubmit="contbutt()">   
+      <h1><b>You can contact me if you want!</b></h1>
+      <div class="mail"><input type="email" id="mailad" name="mailadr" placeholder="Fill your e-mail adress..." required></div>
+      <div class="name"><input type="text" id="fname" name="firstname" placeholder="Your name.." required></div>
+      <div class="msg">
+        <textarea id="my-text" placeholder="You can write your message here..." required maxlength="100"></textarea>
+        <p id="result"></p>
+      </div>
+      <div class="bt">
+          <input type="submit" value="SEND">
+      </div> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </form> 
+    </div>
+    <script>
+     var myText = document.getElementById("my-text");
+     var result = document.getElementById("result");
+     var limit = 100;
+     result.textContent = 0 + "/" + limit;
+    
+    myText.addEventListener("input",function(){
+    var textLength = myText.value.length;
+    result.textContent = textLength + "/" + limit;
+    if(textLength==100){alert("YOU HAVE REACHED THE LIMIT OF 100 CHARACTERS")}
+    });
+    </script>
+</body>
+</html>  

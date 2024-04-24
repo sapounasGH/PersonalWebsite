@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <meta charset="utf-8">
+    <title>ABOUT ME</title>
+    <script>
+       function changetext(){
+           let text1 ="<span> My goals for my future are to get my degree in programming and electronic engeenirng and ideally study abroad for a couple of years, but for my near future i want to get some programming projects so that i can display freely my work. Also want to learn a 3rd language to extend my knowledge level, as my 3rd language i want to pick something that can help me in future such as german or italian. As the years go though i want to travel more maybe go on a tran tour with a train across europe, living the american dream!!I got many year to come so maybe i get to have more goals by then and maybe achieve some of the goals u have now</span>";
+           let text2="<span>Hello my name is Christos Sapounas as it says in the upper left part of the page , i am 19 years old and i am university student of <a href='https://www.ihu.gr/ucips/'>international hellenic uviversity</a> in the <a href='https://www.iee.ihu.gr/en/'>Department of Information and Electronic Engeeniring</a> . I am a big fan of programming as im partially studying it . I am a very social person and i have a team spirit perfect for projects that require teamwork. Music is one of my passion mostly by listening to it as i can't spend an hour without listening to my playlist where u can find the here <a href='https://open.spotify.com/user/212u66igayrbc6wtwv4mmzagy/playlists'>(playlists)</a>, the music i listen to is mostly hip-hop, R and B as Kanye West and Frank Ocean is two of my favorite artists of all time . Also one of my passions is guitar since i've playing the guiter form a very young age . I am a very athletic person and my favorite sport is boxing as i was practising when i was younger . But know i like going casually to the gym for a good physical condition . I am big fan of movies especially trilogies as u can see i really like The Matrix trilogy (favorite trilogy: Lord of the Rings) i also love series as Game of Thrones has a special place into my heart . I love to travel but i've only been to 3 coyntries(Italy,Turkey,Serbia). I am a very social person you can talk to me if u ever see me in public!. i habe many goals for my futurue which i explain if u click the button bellow.</span> ";
+           let text3="My personal goals!";
+           let text4="Some things you need to know about me!";
+           x=document.getElementById("b1").value;
+           if(x=="let me tell you about my goals!"){
+               document.getElementById("b1").value="go back!";
+               document.getElementById("demo").innerHTML=text1;
+               document.getElementById("headr").innerHTML=text3;
+           }else{
+               document.getElementById("b1").value="let me tell you about my goals!";
+               document.getElementById("demo").innerHTML=text2;
+               document.getElementById("headr").innerHTML=text4;
+           }
+       }
+        function btn(){
+            x1=document.getElementById("bun").value;
+           if(x1=="STOP"){
+               document.getElementById("bun").value="START";
+               document.body.style.backgroundImage = "url('staticwallpaper2.png')";
+           }else{
+               document.getElementById("bun").value="STOP";
+               document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/e3/eb/31/e3eb311af2c90bd23b9b44d4c8353aa9.gif')";
+           }
+        }
+    </script>
+    <style>  
+        body{
+            margin: 0px;
+            background-image: url("https://i.pinimg.com/originals/e3/eb/31/e3eb311af2c90bd23b9b44d4c8353aa9.gif");
+            color: white;
+            font-family:"Audiowide", sans-serif;
+        }
+        .onoma h1,h2{font-weight: 400;}
+        .onoma h1{
+            font-size: 150%;
+            margin-top: -10px;
+            margin-left: 2%;
+            
+        }
+        .onoma h2{
+            margin-left: 7%;
+            margin-top: -20px;
+            font-size:150%;
+        }
+        .onoma{
+            width: 30%;
+        }
+        .bara{
+            width: 60%;
+        }
+        .soc{
+            width: 10%;
+        }
+        .bara, .onoma, .soc{
+            float:left;
+            padding: 1.5%;
+            height: 90px;
+            box-sizing: border-box;
+            background-color: darkgreen;
+            font-family:"Audiowide", sans-serif;
+        }
+        .bara ul li{
+            list-style: none;
+            text-align:center;
+            text-decoration: none;
+            display: inline;
+            padding: 3%;
+            font-size: 120%;   
+        }
+        .soc ul li{
+            list-style: none;
+            text-decoration: none;
+        }
+        .bara a{
+            text-decoration: none;
+            color: white;
+        }
+        .bara a:link, a:visited {
+            display: inline-block;
+        }
+        .bara a:hover, a:active {
+            color: black;
+        }
+        .bara ul{
+            margin-left: -20%;
+        }
+        .soc ul{
+            margin-top: -10%;
+        }
+        .d2{
+            padding-top: 7.5%;
+        }
+        .d2 h3{
+            padding-left: 10%;
+            font-weight: 400;
+            font-size: 270%;
+        }
+        .keimeno{
+            padding-left: 10%;
+            font-weight: 350;
+            font-size: 125%;
+        }
+        span{
+            background-color: black;
+        }
+        .keimeno a{
+            color:white;
+        }
+        .keimeno a:hover, a:active {
+            color: darkgreen;
+        }
+        .keimeno{
+            width: 70%;
+        }
+        .eikona{
+            width: 30%;
+        }
+        .keimeno, .eikona{
+           float: left;
+           box-sizing: border-box;
+        }
+        .buton input {
+           background-color: black;
+           color: white;
+           margin-left: 60%;
+           margin-bottom: 2%;
+           display: inline-block;
+           font-family:"Audiowide", sans-serif;
+           font-size: 100%;
+           cursor: pointer;
+           border: 2px solid white;
+        }
+        .buton input:hover{
+            background-color: darkgreen;
+            border: 2px solid darkgreen;
+            transition-duration: 0.4s;
+        }
+        .eikona{
+            text-align: center;
+        }
+        .bara input {
+           background-color: inherit;
+           color: white;
+           font-family:"Audiowide", sans-serif;
+           font-size: 100%;
+           cursor: pointer;
+           border: inherit;
+        }
+        .bara input:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="pano">
+      <div class="onoma">
+      <h1>Christos</h1>
+      <h2>Sapounas</h2>
+      </div>
+      <div class="bara">
+        <ul>
+           <li><a href="homepage.html">HOME</a></li>
+           <li><a href="abtme.html" style="color:black">ABOUT ME</a></li>
+           <li><a href="prjct.html" >MY PROJECT</a></li>
+           <li><a href="hb.html">M&amp;M</a></li>
+           <li><a href="cont.html">CONTACT</a></li>
+           <li><input type="button" id="bun" value="STOP" onclick="btn()"></li>
+          </ul>
+      </div>
+    <div class="soc">
+          <ul>
+           <li><a href="https://www.instagram.com/sapounas.xrhstos/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="18"></a></li>
+           <li><a href="https://open.spotify.com/user/212u66igayrbc6wtwv4mmzagy?si=417847df35654eb2"><img src="https://cdn-icons-png.flaticon.com/512/87/87409.png" width="18"></a></li>
+           <li><a href="https://twitter.com/sapounas_chris"><img src="https://cdn-icons-png.flaticon.com/512/25/25347.png" width="18"></a></li> 
+        </ul>
+    </div>
+    </div>
+    <div class="d2">
+      <h3 id="headr">Some things you need to know about me!</h3>
+      <div class="keimeno"><p id="demo"><span>Hello my name is Christos Sapounas as it says in the upper left part of the page , i am 19 years old and i am university student of <a href="https://www.ihu.gr/ucips/">international hellenic uviversity</a> in the <a href="https://www.iee.ihu.gr/en/">Department of Information and Electronic Engeeniring</a> . I am a big fan of programming as im partially studying it . I am a very social person and i have a team spirit perfect for projects that require teamwork . Music is one of my passion mostly by listening to it as i can't spend an hour without listening to my playlist , the music i listen to is mostly hip-hop, R and B as Kanye West and Frank Ocean is two of my favorite artists of all time . Also one of my passions is guitar since i've playing the guiter form a very young age . I am a very athletic person and my favorite sport is boxing as i was practising when i was younger . But know i like going casually to the gym for a good physical condition . I love to travel but i've only been to 3 coyntries(Italy,Turkey,Serbia). I am a very social person you can talk to me if u ever see me in public!. i habe many goals for my futurue which i explain if u click the button bellow.</span></p></div>
+      <div class="eikona">
+          <div><img src="pfoto.jpg" width="200"></div>
+          <div><p>This is me!</p></div></div> 
+      
+      <div class="buton"><input type="button" id="b1" value="let me tell you about my goals!" onclick="changetext()"></div>
+        <br>
+        <br>
+    </div>
+</body>
+</html>  
