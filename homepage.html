@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <meta charset="utf-8">
+    <title>HOME</title>
+    <script>
+       function changef(){
+          document.getElementById("ch").src="sapmorph.png"; 
+       }
+        function changef1(){
+            document.getElementById("ch").src="morpheus.jpg";
+        }
+        function btn(){
+            x=document.getElementById("bun").value;
+           if(x=="STOP"){
+               document.getElementById("bun").value="START";
+               document.body.style.backgroundImage = "url('staticwallpaper2.png')";
+               document.getElementById("strstp").innerHTML="(press <b>START</b> to start the back ground)";
+           }else{
+               document.getElementById("bun").value="STOP";
+               document.getElementById("strstp").innerHTML="(press <b>STOP</b> to stop the back ground)";
+               document.body.style.backgroundImage = "url('https://i.pinimg.com/originals/e3/eb/31/e3eb311af2c90bd23b9b44d4c8353aa9.gif')";
+           }
+        }
+    </script>
+    <style>  
+        body{
+            margin: 0px;
+            background-image: url("https://i.pinimg.com/originals/e3/eb/31/e3eb311af2c90bd23b9b44d4c8353aa9.gif");
+            color: white;
+            font-family:"Audiowide", sans-serif;
+        }
+        .onoma h1,h2{font-weight: 400;}
+        .onoma h1{
+            font-size: 150%;
+            margin-top: -10px;
+            margin-left: 2%; 
+        }
+        
+        .onoma h2{
+            margin-left: 7%;
+            margin-top: -20px;
+            font-size:150%;
+        }
+        .onoma{
+            width: 30%;
+        }
+        .bara{
+            width: 60%;
+        }
+        .soc{
+            width: 10%;
+        }
+        .bara, .onoma, .soc{
+            float:left;
+            padding: 1.5%;
+            height: 90px;
+            box-sizing: border-box;
+            background-color: darkgreen;
+            font-family:"Audiowide", sans-serif;
+        }
+        .bara ul li{
+            list-style: none;
+            text-align:center;
+            text-decoration: none;
+            display: inline;
+            padding: 3%;
+            font-size: 120%;   
+        }
+        .soc ul li{
+            list-style: none;
+            text-decoration: none;
+        }
+        .bara a{
+            text-decoration: none;
+            color: white;
+        }
+        a:link, a:visited {
+            display: inline-block;
+        }
+        a:hover, a:active {
+            color: black;
+        }
+        .bara ul{
+            margin-left: -20%;
+        }
+        .soc ul{
+            margin-top: -10%;
+        }
+        .down{
+            padding-top: 7.5%;
+            text-align: center;
+        }
+        .down h3{
+            font-weight: 400;
+        }
+        .intro h3{
+            font-size: 250%;
+        }
+        .intro{
+            margin-bottom: 5%;
+        }
+        input {
+           background-color: inherit;
+           color: white;
+           font-family:"Audiowide", sans-serif;
+           font-size: 100%;
+           cursor: pointer;
+           border: inherit;
+        }
+        input:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="pano">
+      <div class="onoma">
+      <h1>Christos</h1>
+      <h2>Sapounas</h2>
+      </div>
+      <div class="bara">
+        <ul>
+           <li><a href="homepage.html" style="color:black">HOME</a></li>
+           <li><a href="abtme.html">ABOUT ME</a></li>
+            <li><a href="prjct.html">MY PROJECT</a></li>
+           <li><a href="hb.html">M&amp;M</a></li>
+           <li><a href="cont.html">CONTACT</a></li>
+           <li><input type="button" id="bun" value="STOP" onclick="btn()"></li>
+          </ul>
+      </div>
+    <div class="soc">
+          <ul>
+           <li><a href="https://www.instagram.com/sapounas.xrhstos/"><img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="18"></a></li>
+           <li><a href="https://open.spotify.com/user/212u66igayrbc6wtwv4mmzagy?si=417847df35654eb2"><img src="https://cdn-icons-png.flaticon.com/512/87/87409.png" width="18"></a></li>
+           <li><a href="https://twitter.com/sapounas_chris"><img src="https://cdn-icons-png.flaticon.com/512/25/25347.png" width="18"></a></li> 
+        </ul>
+    </div>
+    </div>
+    <div class="down">
+        <div class="intro">
+            <h3><b>Welcome to my website!</b></h3>
+            <p>My name is Christos Sapounas and this is my pesronal website</p>
+            <p id=strstp>(press <b>STOP</b> to stop the back ground)</p>
+            </div>  
+            <div class="im">
+            <img id="ch" src="morpheus.jpg" width="450" onmouseover="changef()" onmouseout="changef1()">
+        </div>
+        <div class="cont"><p>(there is something behind the picture)</p></div>
+        </div>
+</body>
+</html>  
