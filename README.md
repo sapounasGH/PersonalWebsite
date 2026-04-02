@@ -54,9 +54,10 @@ PersonalWebsite/
 
 **Christos Sapounas**
 
-- Instagram: [@sapounas.xrhstos](https://www.instagram.com/sapounas.xrhstos/)
-- Spotify: [Profile](https://open.spotify.com/user/212u66igayrbc6wtwv4mmzagy)
-- Twitter/X: [@sapounas_chris](https://twitter.com/sapounas_chris)
 - GitHub: [@sapounasGH](https://github.com/sapounasGH)
 
 ---
+
+## License
+
+This project was developed as a university thesis. All rights reserved unless otherwise stated.
