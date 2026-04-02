@@ -1,6 +1,7 @@
 # Personal Website — Christos Sapounas
 
-A personal website built with pure HTML and CSS, featuring a multi-page layout, animated background, interactive image effects, and links to social media profiles.
+First university project.
+A personal website featuring a multi-page layout, animated background, interactive image effects, and links to social media profiles.
 
 ---
 
