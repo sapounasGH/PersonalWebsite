@@ -18,7 +18,7 @@ PersonalWebsite/
 
 ---
 
-## ✨ Features
+## Features
 
 - **Multi-page navigation** — Consistent navbar across all pages linking to Home, About Me, Projects, M&M (Hobbies), and Contact.
 - **Animated background** — A looping GIF background with a START/STOP toggle button so the user can pause the animation.
@@ -29,7 +29,7 @@ PersonalWebsite/
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **HTML5**
 - **CSS3** (inline styles)
@@ -38,7 +38,7 @@ PersonalWebsite/
 
 ---
 
-## 📄 Pages Overview
+## Pages Overview
 
 | File | Description |
 |------|-------------|
@@ -50,7 +50,7 @@ PersonalWebsite/
 
 ---
 
-## 👤 Author
+## Author
 
 **Christos Sapounas**
 
@@ -60,7 +60,3 @@ PersonalWebsite/
 - GitHub: [@sapounasGH](https://github.com/sapounasGH)
 
 ---
-
-## 📝 License
-
-This project is open source and available for personal use and learning purposes.
